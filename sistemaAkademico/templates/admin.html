@@ -1,0 +1,20 @@
+<!-- templates/admin.html -->
+{% load static %}
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Admin - Sistema Académico</title>
+    <link rel="stylesheet" href="{% static 'css/styles.css' %}">
+</head>
+<body>
+    <div class="container">
+        <h2>Panel de Administración</h2>
+        <p>Bienvenido, <span id="username"></span>!</p>
+        <button id="verUsuariosBtn">Ver Usuarios</button>
+        <div id="listaUsuarios"></div>
+        <button id="logoutBtn">Cerrar Sesión</button>
+    </div>
+    <script src="{% static 'js/admin.js' %}"></script>
+</body>
+</html>

@@ -1,0 +1,19 @@
+<!-- templates/estudiante.html -->
+{% load static %}
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Estudiante - Sistema Académico</title>
+    <link rel="stylesheet" href="{% static 'css/styles.css' %}">
+</head>
+<body>
+    <div class="container">
+        <h2>Panel de Estudiante</h2>
+        <p>Bienvenido, <span id="username"></span>!</p>
+        <!-- Agrega funcionalidades específicas para estudiantes aquí -->
+        <button id="logoutBtn">Cerrar Sesión</button>
+    </div>
+    <script src="{% static 'js/estudiante.js' %}"></script>
+</body>
+</html>

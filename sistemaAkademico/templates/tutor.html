@@ -1,0 +1,19 @@
+<!-- templates/tutor.html -->
+{% load static %}
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Tutor - Sistema Académico</title>
+    <link rel="stylesheet" href="{% static 'css/styles.css' %}">
+</head>
+<body>
+    <div class="container">
+        <h2>Panel de Tutor</h2>
+        <p>Bienvenido, <span id="username"></span>!</p>
+        <!-- Agrega funcionalidades específicas para tutores aquí -->
+        <button id="logoutBtn">Cerrar Sesión</button>
+    </div>
+    <script src="{% static 'js/tutor.js' %}"></script>
+</body>
+</html>
